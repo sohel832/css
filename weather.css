@@ -1,1 +1,127 @@
-
+body {
+    background-image: url('https://img.freepik.com/premium-photo/banner-hand-holding-planet-earth-with-blurred-field-background-climate-change-concept-3d-rendering_360032-207.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+    line-height: 1.6;
+    color: #1f2514;
+  }
+  
+  .weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #083ec7;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 15px;
+    width: 80%;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 12px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #86c440;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #7fe60a;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    background-color: #004080;
+    transform: translateY(0);
+  }
+  
+  button:focus {
+    outline: 3px solid #0056b3;
+  }
+  
+  .weather-info {
+    background-color: rgba(146, 173, 172, 0.722);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(144, 62, 62, 0.1);
+    text-align: center;
+    font-style: italic;
+    color: #db652e;
+  }
+  .weather-info h2 {
+    margin-bottom: 10px;
+  }
+  .weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #160becf1;
+  }
+  .error {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      width: 90%;
+      padding: 15px;
+    }
+    
+    input, button {
+      width: 100%;
+    }
+  }
+  
